@@ -2,7 +2,7 @@ const express = require("express");
 const _ = require("lodash");
 const { Card, validateCard, generateRandomNumber } = require("../models/card");
 const auth = require("../middleware/auth");
-const { Router } = require("express");
+
 const router = express.Router();
 
 router.get("/my-cards", auth, async (req, res) => {
